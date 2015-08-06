@@ -1,0 +1,30 @@
+Tournament Results.
+
+This Python program uses the PostgreSQL database to keep track of players and matches in a game tournament. 
+
+System Requriements:
+
+You need to install the following program inorder to sucessfully run the program
+	1.Vagrant
+	2.Virtual Machine
+	3.Git
+	4.Clone the fullstack­nanodegree­vm repository to your local machine.       
+	5. Last but not least the the following files :
+		5.1. tournament.py
+		5.2. tournament_test.py
+		5.3. tournament.sql
+		Save them to to your fullstack\vagrant\tournament---> Folder.
+		
+	6. Once the virtual machine up and running, open git bash and type the command psql \i tournament.sql 
+	   this will create the database for the program. 
+	7. Then RUN the python tounament_test.py in the same virtual environment.
+	8. On the sucessfull execution you will see the list of test and the all test passed message. 
+
+Thank you for your time. Please feel to give feedback on how I can make improvements on muhd.adnan@gmail.com
+
+Muhammad Adnan Khan
+
+
+
+
+

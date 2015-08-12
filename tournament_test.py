@@ -112,12 +112,15 @@ def testPairings():
     registerPlayer("Twilight Sparkle")
     registerPlayer("Fluttershy")
     registerPlayer("Applejack")
-    registerPlayer("Pinkie Pie")
+    registerPlayer("Fadillah badar")
     standings = playerStandings()
     [id1, id2, id3, id4] = [row[0] for row in standings]
-    reportMatch(id1, id2)
-    reportMatch(id3, id4)
+    for player1, player2 in zip(standings[0::2],standings[1::2]):
+        reportMatch(player1[0], player2[0])
     pairings = swissPairings()
+    if pairings is None:
+       raise ValueError(
+            "ODD number of players")
     if len(pairings) != 2:
         raise ValueError(
             "For four players, swissPairings should return two pairs.")
